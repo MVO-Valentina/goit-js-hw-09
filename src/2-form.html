@@ -15,12 +15,34 @@
     />
 
     <main>
-      <div class="container">
-        <h1 class="main-title">
-          <span class="main-title-gradient">Form</span> to Form
-        </h1>
-        <load src="./partials/back-link.html" />
-      </div>
+      <main>
+        <div class="container">
+          <h1 class="main-title">
+            <span class="main-title-gradient">Form</span> to Form
+          </h1>
+          <load src="./partials/back-link.html" />
+          <form class="feedback-form">
+            <label class="feedback-label">
+              Email
+              <input
+                type="email"
+                name="email"
+                class="feedback-input"
+                placeholder="Your email"
+              />
+            </label>
+            <label class="feedback-label">
+              Message
+              <textarea
+                name="message"
+                class="feedback-textarea"
+                placeholder="Your message"
+              ></textarea>
+            </label>
+            <button type="submit" class="feedback-button">Send</button>
+          </form>
+        </div>
+      </main>
     </main>
     <script type="module" src="./js/2-form.js"></script>
     <load src="./partials/footer.html" />
